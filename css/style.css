@@ -29,6 +29,7 @@ img{
 
 .backgroud-white{
     background-color: white;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .backgroud-cyan{
@@ -37,6 +38,7 @@ img{
 
 .backgroud-cyan-light{
     background-color: color-mix(in srgb, var(--cyan), transparent 30%);
+    border-radius: 0 0 .5rem .5rem;
 
 }
 
@@ -82,7 +84,7 @@ h2.margin-double{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 800px;
     padding: 1rem;
 }
 
@@ -104,6 +106,23 @@ h2.margin-double{
 
 .price-description{
     font-size: 1.1rem;
+    margin-bottom: calc(var(--margin-bottom-default)*1.5);
+}
+
+.sign-up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: var(--bright-yellow);
+    text-align: center;
+    border-radius: .5rem;
+}
+
+
+.sign-up a{
+    text-decoration: none;
+    color: white;
 }
 
 .text-small{
@@ -123,3 +142,29 @@ h2.margin-double{
     font-size: 1.1rem;
 }
 
+
+@media screen and (min-width: 48rem){
+    .container{
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .card{
+        padding: 2rem;
+    }
+
+    .col-12-md{
+        grid-column: span 12;
+    }
+
+    .col-6-md{
+        grid-column: span 6;
+    }
+
+    .backgroud-cyan-light{
+        border-radius: 0 0 .5rem 0;
+    }
+
+    .backgroud-cyan{
+        border-radius: 0 0 0 .5rem;
+    }
+}
