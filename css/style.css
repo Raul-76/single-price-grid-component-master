@@ -1,0 +1,125 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --margin-bottom-default: 1rem;
+}
+
+*::after,
+*::before,
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+}
+
+img{
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+.backgroud-white{
+    background-color: white;
+}
+
+.backgroud-cyan{
+    background-color: var(--cyan);
+}
+
+.backgroud-cyan-light{
+    background-color: color-mix(in srgb, var(--cyan), transparent 30%);
+
+}
+
+.title-secondary{
+    font-weight: 400;
+}
+
+.title-cyan{
+    color: var(--cyan);
+}
+
+.text-yellow{
+    color: var(--bright-yellow);
+    font-weight: 700;
+}
+
+.margin-bottom{
+    margin-bottom: var(--margin-bottom-default);
+}
+
+.text-gray{
+    color: var(--grayish-blue);
+    line-height: 2;
+    font-weight: 400;
+}
+
+.text-align-left{
+    text-align: left;
+    width: 70%;
+}
+
+
+h2{
+    font-weight: 700;
+    margin-bottom: var(--margin-bottom-default);
+}
+
+h2.margin-double{
+    margin-bottom: calc(var(--margin-bottom-default)*1.5)
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+.container > *{
+    grid-column: span 12;
+}
+
+.card{
+    padding: 1.5rem 1rem;
+    color: white;
+}
+
+
+.price{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: calc(var(--margin-bottom-default)/2);
+}
+
+.price-description{
+    font-size: 1.1rem;
+}
+
+.text-small{
+    font-weight: 400;
+    font-size: 1rem;
+    color: color-mix(in srgb, white, transparent);
+}
+
+.list-why-us{
+    list-style-type: none;
+    color: color-mix(in srgb, white, transparent); 
+
+}
+
+.list-why-us li{
+    margin-bottom: .2rem;
+    font-size: 1.1rem;
+}
+
